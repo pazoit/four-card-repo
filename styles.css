@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+    background-color: hsl(180, 33%, 98%);
+    
+    /* padding-left: 20px;
+ padding-right: 20px;
+ padding-top: 25px; */
+ /* padding: 10px 25px; */
+
+
+}
+
+.container-cards{
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+}
+
+.container{
+    display: grid;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    gap: 15px;
+  
+    display: grid;
+    color:hsl(234, 12%, 34%);
+    width: 100%;
+}
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 10px;
+
+}
+
+.header-child{
+    text-align: center;
+}
+
+.subheader{
+
+    font-size: 24px;
+}
+
+.header-text{
+    text-align: center;
+}
+
+.header-title{
+font-size: 24px;
+
+}
+
+.cards{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+
+.container-supervisor{
+
+    border-top: 3px solid hsl(180, 62%, 55%) ;
+}
+
+.container-team{
+    border-top: 3px solid hsl(0, 78%, 62%) ;
+}
+
+.container-karma{
+
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.container-calculator{
+
+border-top: 3px solid hsl(212, 86%, 64%);
+
+}
+
+.image{
+width: 3rem;
+height: 3rem;
+
+
+}
+.container-image{
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (min-width: 426px) {
+.container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+}
+
+.header{
+
+  grid-row-start:    1;
+grid-row-end:      2;
+grid-column-start: 1;
+grid-column-end:   3;
+    }
+
+    
+}
+
+
+
+ @media only screen and (min-width: 769px){
+
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90rem;
+} 
+
+
+.container {
+    height: 59rem;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:8rem 8rem 8rem 8rem 8rem ; 
+}
+
+
+
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+ 
+}
+
+.header-child{
+    font-size: 60px;
+}
+
+.header-title{
+    font-size: 25px;
+}
+
+.cards{
+
+    font-size: 20px;
+}
+
+
+.container-karma{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.container-supervisor{
+        grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container-calculator{
+  grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+.container-team{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+    
+
+
+} 
