@@ -56,15 +56,25 @@ padding-bottom: 20px;
 .subheader{
 
     font-size: 24px;
+   font-weight: 200px; 
 }
 
 .header-text{
     text-align: center;
+    font-weight: 400px;
+}
+
+.card-title{
+font-weight: 600px;
+}
+
+.card-text{
+font-weight: 400px;
 }
 
 .header-title{
 font-size: 24px;
-
+font-weight: 600px;
 }
 
 .cards{
@@ -138,34 +148,48 @@ grid-column-end:   3;
     justify-content: center;
     align-items: center;
     width: 90rem;
+    padding-top:70px ;
 } 
 
 
 .container {
-    height: 59rem;
+    height: 55rem;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows:8rem 8rem 8rem 8rem 8rem ; 
+    grid-template-rows:8rem 6rem 6rem 6rem 8rem 6rem;  
+    width: 70rem;
 }
 
 
 
 .header{
     grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
     text-align: center;
  
 }
 
-.header-child{
-    font-size: 60px;
+
+
+
+.header-text{
+
+ font-size: 20px;
+ padding-left: 18rem;
+ padding-right: 18rem;
 }
+.subheader{
+
+font-size: 38px;
+
+}
+
 
 .header-title{
-    font-size: 25px;
-}
 
+    font-size: 39px;
+}
 .cards{
 
     font-size: 20px;
@@ -173,30 +197,30 @@ grid-column-end:   3;
 
 
 .container-karma{
-    grid-row-start: 4;
-    grid-row-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 7;
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
 .container-supervisor{
-        grid-row-start: 3;
-    grid-row-end: 5;
+        grid-row-start: 4;
+    grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
 .container-calculator{
-  grid-row-start: 3;
-    grid-row-end: 5;
+  grid-row-start: 4;
+    grid-row-end: 6;
     grid-column-start: 3;
     grid-column-end: 4;
 
 }
 
 .container-team{
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
     grid-column-start: 2;
     grid-column-end: 3;
 }
